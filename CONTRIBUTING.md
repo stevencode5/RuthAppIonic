@@ -2,9 +2,9 @@
 
 First of all, I would like to thank you for taking your time to help us develop this app. We are really glad you're here !.
 This are son resources and knowledge you need to star:
-  *
-  *
-  *
+  * Documentacion
+  * Documentacion
+  * Documentacion
 
 ## Testing
 
