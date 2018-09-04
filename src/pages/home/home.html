@@ -4,6 +4,12 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>  
+<ion-content padding>
   <h2>RuthApp!</h2>
+
+  <h2 translate>demo.title</h2>
+
+  <button ion-button (click)="changeLanguage('es')">{{ 'demo.spanish' | translate }}</button>
+  <button ion-button (click)="changeLanguage('en')">{{ 'demo.english' | translate }}</button>
+
 </ion-content>
