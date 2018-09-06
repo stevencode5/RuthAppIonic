@@ -14,6 +14,20 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { ProductosProvider } from '../providers/productos/productos';
+
+export const firebaseConfig = {
+  apiKey: "AIzaSyASQQ68c7K5nI8_lvexDAS05_qGUJxmIDs",
+  authDomain: "ruthapppru.firebaseapp.com",
+  databaseURL: "https://ruthapppru.firebaseio.com",
+  projectId: "ruthapppru",
+  storageBucket: "ruthapppru.appspot.com",
+  messagingSenderId: "858989404623"
+};
+
 @NgModule({
   declarations: [
     MyApp,
@@ -25,6 +39,9 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
   imports: [
     BrowserModule,
     HttpClientModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -45,7 +62,10 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    AngularFireDatabase,
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    ProductosProvider,
+    ProductosProvider
   ]
 })
 export class AppModule { }
