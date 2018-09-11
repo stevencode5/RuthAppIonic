@@ -20,7 +20,7 @@ export class ProductosProvider {
     return this.afDB.database.ref('/productos/' + producto.id).set(producto);
   }
 
-  public editarLugar(producto) {
+  public editarProducto(producto) {
     return this.afDB.database.ref('/productos/' + producto.id).set(producto);
   }
 
