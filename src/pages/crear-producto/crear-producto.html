@@ -1,38 +1,33 @@
 <ion-header>
-
   <ion-navbar>
-    <ion-title>Crear Producto</ion-title>
+    <ion-title>{{ 'titulo.crearproducto' | translate }}</ion-title>
   </ion-navbar>
-
 </ion-header>
-
 
 <ion-content padding>
 
   <ion-list>
-
     <ion-item>
-      <ion-label floating>Nombre</ion-label>
+      <ion-label floating>{{ 'nombre' | translate }}</ion-label>
       <ion-input type="text" [(ngModel)]="producto.nombre"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label floating>Precio</ion-label>
+      <ion-label floating>{{ 'precio' | translate }}</ion-label>
       <ion-input type="number" [(ngModel)]="producto.precio"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label floating>Cantidad</ion-label>
+      <ion-label floating>{{ 'cantidad' | translate }}</ion-label>
       <ion-input type="number" [(ngModel)]="producto.cantidad"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label floating>Imagen</ion-label>
+      <ion-label floating>{{ 'imagen' | translate }}</ion-label>
       <ion-input type="text" [(ngModel)]="producto.imagen"></ion-input>
     </ion-item>
-
   </ion-list>
 
-  <button ion-button full (click)="guardarProducto()">Agregar Producto</button>
+  <button ion-button full (click)="guardarProducto()">{{ 'agregar' | translate }}</button>
 
 </ion-content>

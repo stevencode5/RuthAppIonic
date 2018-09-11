@@ -21,6 +21,7 @@ import { ProductosProvider } from '../providers/productos/productos';
 import { CrearProductoPage } from '../pages/crear-producto/crear-producto';
 import { ModificarProductoPage } from '../pages/modificar-producto/modificar-producto';
 import { ConsultarProductoPage } from '../pages/consultar-producto/consultar-producto';
+import { ConfiguracionIdiomaPage } from '../pages/configuracion-idioma/configuracion-idioma';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyASQQ68c7K5nI8_lvexDAS05_qGUJxmIDs",
@@ -40,7 +41,8 @@ export const firebaseConfig = {
     TabsPage,
     ConsultarProductoPage,
     CrearProductoPage,
-    ModificarProductoPage
+    ModificarProductoPage,
+    ConfiguracionIdiomaPage
   ],
   imports: [
     BrowserModule,
@@ -66,7 +68,8 @@ export const firebaseConfig = {
     TabsPage,
     ConsultarProductoPage,
     CrearProductoPage,
-    ModificarProductoPage
+    ModificarProductoPage,
+    ConfiguracionIdiomaPage
   ],
   providers: [
     StatusBar,

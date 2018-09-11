@@ -31,16 +31,14 @@ export class ConsultarProductoPage {
   }
 
   public irAVistaModificar(producto) {
-    console.log('Modificar producto : ' + producto);
     this.navCtrl.push(ModificarProductoPage, { producto: producto });
   }
 
   public eliminarProducto(producto) {
-    if (confirm("¿Seguro que desea borrar este lugar?")) {
-      console.log('Eliminar producto : ' + producto);
+    if (confirm(this.translate.instant("mensaje.confirmareliminacionproducto"))) {
       this.proveedorProductos.eliminarProducto(producto)
         .then(() => {
-          alert("El producto  " + producto.nombre + " se elimino exitosamente !");
+          alert(this.translate.instant("mensaje.productoeliminadoexitoso"));
         }
         );
     }

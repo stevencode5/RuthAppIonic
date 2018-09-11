@@ -1,7 +1,25 @@
 {
+	"HELLO": "Tos que",
 	"RuthTls": {
 		"title": "RuthApp in English",
 		"spanish": "Spanish",
 		"english": "English"
-	}
+	},
+	"productos": "Products",
+	"titulo.crearproducto": "Create Product",
+	"titulo.modificarproducto": "Edit Product",
+	"nombre": "Name",
+	"precio": "Price",
+	"cantidad": "Quantity",
+	"imagen": "Image",
+	"borrar": "Delete",
+	"agregar": "Add",
+	"modificar": "Edit",
+	"mensaje.confirmareliminacionproducto": "Are you sure you want to delete this product?",
+	"mensaje.productoeliminadoexitoso": "The product was successfully removed",
+	"mensaje.productomodificadoexitoso": "The product was modified successfully",
+	"mensaje.productoguardadoexitoso": "The product was added successfully",
+	"lenguaje": "Language",
+	"administracion.lenguaje": "Language Administration",
+	"cambiarlenguaje": "Change Language"
 }

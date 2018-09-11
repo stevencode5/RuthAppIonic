@@ -1,7 +1,25 @@
 {
+	"HELLO": "Tos que",
 	"RuthTls": {
 		"title": "RuthAp en Español",
 		"spanish": "Español",
 		"english": "Ingles"
-	}
+	},
+	"productos": "Productos",
+	"titulo.crearproducto": "Crear Producto",
+	"titulo.modificarproducto": "Modificar Producto",
+	"nombre": "Nombre",
+	"precio": "Precio",
+	"cantidad": "Cantidad",
+	"imagen": "Imagen",
+	"borrar": "Borrar",
+	"agregar": "Agregar",
+	"modificar": "Modificar",
+	"mensaje.confirmareliminacionproducto": "¿Seguro que desea borrar este producto?",
+	"mensaje.productoeliminadoexitoso": "El producto se eliminado exitosamente",
+	"mensaje.productomodificadoexitoso": "El producto se modifico exitosamente",
+	"mensaje.productoguardadoexitoso": "El producto se agrego exitosamente",
+	"lenguaje": "Lenguaje",
+	"administracion.lenguaje": "Administracion Lenguaje",
+	"cambiarlenguaje": "Cambiar Lenguaje"
 }
