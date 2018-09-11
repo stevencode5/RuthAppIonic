@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the ModificarProductoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { ProductosProvider } from '../../providers/productos/productos';
 
 @IonicPage()
 @Component({
@@ -15,11 +9,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ModificarProductoPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  producto: any = {};
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public proveedorProductos: ProductosProvider) {
+    this.producto = navParams.get('producto');
+    console.log('en el constructuror de modificarProdcutopage '+this.producto);
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ModificarProductoPage');
+  public modificarProducto() {
+    this.proveedorProductos.editarProducto(this.producto);
+    console.log(this.producto);
+    alert("Modificado con exito !");
+    this.navCtrl.pop();
   }
 
 }
