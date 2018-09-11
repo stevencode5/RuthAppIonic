@@ -14,10 +14,12 @@ export class CrearProductoPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public proveedorProductos: ProductosProvider) {
   }
 
-  public guardarProducto(){
+  public guardarProducto() {
     this.producto.id = Date.now();
     this.proveedorProductos.crearProducto(this.producto);
     console.log(this.producto);
+    alert("Guardado con exito !");
+    this.navCtrl.pop();
   }
 
 }
