@@ -20,6 +20,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { ProductosProvider } from '../providers/productos/productos';
 import { CrearProductoPage } from '../pages/crear-producto/crear-producto';
 import { ModificarProductoPage } from '../pages/modificar-producto/modificar-producto';
+import { ConsultarProductoPage } from '../pages/consultar-producto/consultar-producto';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyASQQ68c7K5nI8_lvexDAS05_qGUJxmIDs",
@@ -37,6 +38,7 @@ export const firebaseConfig = {
     ContactPage,
     HomePage,
     TabsPage,
+    ConsultarProductoPage,
     CrearProductoPage,
     ModificarProductoPage
   ],
@@ -62,6 +64,7 @@ export const firebaseConfig = {
     ContactPage,
     HomePage,
     TabsPage,
+    ConsultarProductoPage,
     CrearProductoPage,
     ModificarProductoPage
   ],

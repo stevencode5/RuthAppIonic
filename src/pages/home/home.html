@@ -5,21 +5,14 @@
 </ion-header>
 
 <ion-content padding>
+  <h2 translate>RuthTls.title</h2>
 
-  <!-- ToDo Search Bar -->
-  <ion-list>
-    <ion-item *ngFor="let producto of productos" (click)="irAVistaModificar()">
-      <ion-avatar item-start>
-        <img src="img/avatar-finn.png">
-      </ion-avatar>
-      <h2>{{producto.nombre}}</h2>
-      <h3>Cantidad: {{producto.cantidad}}</h3>
-      <p>$ {{producto.precio}}</p>
-    </ion-item>
-  </ion-list>
+  <button ion-button (click)="changeLanguage('es')">{{ 'spanish' | translate }}</button>
+  <button ion-button (click)="changeLanguage('en')">{{ 'english' | translate }}</button>
 
-  <ion-fab bottom right>
-    <button ion-fab (click)="irAVistaAgregar()">+</button>
-  </ion-fab>
-  
+  <h1>Administracion ! </h1>
+
+  <button ion-button (click)="irAVistaProductos()">CRUD Productos</button>
+
+
 </ion-content>
