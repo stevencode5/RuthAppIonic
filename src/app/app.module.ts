@@ -18,9 +18,9 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { ProductosProvider } from '../providers/productos/productos';
-import { CrearProductoPage } from '../pages/crear-producto/crear-producto';
-import { ModificarProductoPage } from '../pages/modificar-producto/modificar-producto';
-import { ConsultarProductoPage } from '../pages/consultar-producto/consultar-producto';
+import { CrearProductoPage } from '../pages/administracion/productos/crear-producto/crear-producto';
+import { ModificarProductoPage } from '../pages/administracion/productos/modificar-producto/modificar-producto';
+import { ConsultarProductoPage } from '../pages//administracion/productos/consultar-producto/consultar-producto';
 import { ConfiguracionIdiomaPage } from '../pages/configuracion-idioma/configuracion-idioma';
 
 export const firebaseConfig = {

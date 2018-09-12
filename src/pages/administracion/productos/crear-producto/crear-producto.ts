@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ProductosProvider } from '../../providers/productos/productos';
+import { IonicPage, NavController } from 'ionic-angular';
+import { ProductosProvider } from '../../../../providers/productos/productos';
 import { TranslateService } from '@ngx-translate/core';
 
 @IonicPage()
@@ -10,12 +10,12 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class CrearProductoPage {
 
-  producto: any = {};
+  private producto: any = {};
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public proveedorProductos: ProductosProvider, private translate: TranslateService) {
+  constructor(private proveedorProductos: ProductosProvider, private navCtrl: NavController, private translate: TranslateService) {
   }
 
-  public guardarProducto() {
+  public guardarProducto(): void {
     this.producto.id = Date.now();
     this.proveedorProductos.crearProducto(this.producto);
     console.log(this.producto);

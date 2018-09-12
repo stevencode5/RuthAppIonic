@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
 
 @IonicPage()
@@ -9,13 +9,13 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class ConfiguracionIdiomaPage {
 
-  lenguaje: string;
+  private lenguaje: string;
 
-  constructor(private translate: TranslateService, public navCtrl: NavController) {
+  constructor(private translate: TranslateService) {
     this.lenguaje = translate.getBrowserLang();
   }
 
-  public cambiarLenguaje() {
+  public cambiarLenguaje(): void {
     console.log("Lenguaje seleccionado : " + this.lenguaje);
     this.translate.use(this.lenguaje);
   }

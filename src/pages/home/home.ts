@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { TranslateService } from "@ngx-translate/core";
-import { ConsultarProductoPage } from '../consultar-producto/consultar-producto';
+import { ConsultarProductoPage } from '../administracion/productos/consultar-producto/consultar-producto';
 import { ConfiguracionIdiomaPage } from '../configuracion-idioma/configuracion-idioma';
 
 @Component({

@@ -4,7 +4,7 @@ import { AngularFireDatabase } from 'angularfire2/database';
 @Injectable()
 export class ProductosProvider {
 
-  constructor(public afDB: AngularFireDatabase) {
+  constructor(private afDB: AngularFireDatabase) {
 
   }
 
