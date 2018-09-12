@@ -26,6 +26,9 @@ Always write a clear log message for your commits. One-line messages are fine fo
 
 Start reading our code and you'll get the hang of it:
 
+  * Every property class must be private
+  * Every function should be private if not use in a page
+  * Sort function arguments by relevance
   * We indent using two spaces (soft tabs)
   * We avoid logic in views, putting HTML generators into helpers
   * We ALWAYS put spaces after list items and method parameters (`[1, 2, 3]`, not `[1,2,3]`), around operators (`x += 1`, not `x+=1`), and around hash arrows.
